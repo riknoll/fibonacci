@@ -5,6 +5,10 @@ function fibonacci (n: number): any {
     return fibonacci(n - 1) + fibonacci(n - 2)
 }
 basic.forever(function () {
+    led.plotBarGraph(
+    0,
+    0
+    )
     for (let index = 0; index <= 10; index++) {
         basic.showNumber(fibonacci(index))
     }
